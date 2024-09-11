@@ -55,17 +55,27 @@ public class Pelota : MonoBehaviour
         GameObject[] ladrillos = GameObject.FindGameObjectsWithTag("Ladrillo");
         if(ladrillos.Length == 0 && nivel == 1)
         {
-            SceneManager.LoadScene("Nivel2");
+            nivel2();
         }
 
         if(ladrillos.Length == 0 && nivel == 2)
         {
-            SceneManager.LoadScene("Victoria");
+            victory();
         }
     }
 
     void GameOver()
     {
         SceneManager.LoadScene("derrota");
+    }
+
+    void nivel2()
+    {
+        SceneManager.LoadScene("Nivel2");
+    }
+
+    void victory()
+    {
+        SceneManager.LoadScene("Victoria");
     }
 }
