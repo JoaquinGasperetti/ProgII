@@ -13,7 +13,7 @@ public class Pelota : MonoBehaviour
     bool IsMooving;
     private int puntos;
     public Text PuntuacionText;
-    private int nivel;
+    public int nivel;
 
     void Start()
     {
@@ -55,7 +55,6 @@ public class Pelota : MonoBehaviour
         GameObject[] ladrillos = GameObject.FindGameObjectsWithTag("Ladrillo");
         if(ladrillos.Length == 0 && nivel == 1)
         {
-            nivel = 2;
             SceneManager.LoadScene("Nivel2");
         }
 

@@ -1452,6 +1452,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   VelocidadInicial: {x: 1000, y: 1500}
   PuntuacionText: {fileID: 822184395}
+  nivel: 1
 --- !u!1 &624272344
 GameObject:
   m_ObjectHideFlags: 0
